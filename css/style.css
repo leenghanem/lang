@@ -1,0 +1,271 @@
+@font-face{
+    font-family: ar-font;
+    src: url(../fonts/NotoNaskhArabic-Medium.ttf);
+}
+body{
+    direction: rtl;
+    font-family: ar-font;
+    overflow-x: hidden;
+}
+
+/*navbar*/
+nav.navbar {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    border-bottom: 1px solid transparent;
+    z-index: 20;
+    text-align: right;
+    width: 100%;
+}
+nav.navbar .navbar-toggler{
+    background-color: #16aeca;
+color: #16aeca;
+}
+nav.navbar .navbar-toggler .navbar-toggler-icon{
+    color: black;
+}
+
+nav.navbar .navbar-brand{
+    color: rgb(0, 0, 0);
+}
+nav.navbar .navbar-brand img {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+nav.navbar ul.navbar-nav li a.nav-link {
+    text-align: right;
+    color: #097f94;
+    background-color: #ffffffa1;
+    margin-left: 5px;
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+    font-size: 16px;
+    line-height: 40px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-link.active {
+    color: #16aeca;
+    background-color: #ffffff;
+}
+
+nav.navbar.noTransparrent {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+
+nav.navbar.noTransparrent .navbar-brand img {
+    width: 60%;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+    color: #16aeca;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover, nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+    color: #331f02;
+    background-color: #16aeca;
+}
+
+
+/*carousel*/
+.carousel img{
+    height: 560px;
+}
+.carousel h1{
+text-align: center;
+text-shadow: 0 0 10px rgb(17, 220, 247), 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+}
+.main-text {
+    position: absolute;
+    top: 280px;
+    width: 96.66666666666666%;
+    color: rgb(0, 0, 0);
+}
+
+/*cards - لماذا لغاتي؟*/
+section.whyme {
+    padding: 80px 0;
+}
+
+section.whyme .title h2 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+section.whyme .title {
+    margin-bottom: 50px;
+}
+
+section.whyme .card {
+    background-color: #ffffff;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    transition: all 1s ease;
+}
+
+section.whyme .card:hover {
+    height: 280px;
+}
+
+section.whyme .card img {
+    width: 140px;
+    margin: 40px auto 0;
+}
+
+section.whyme .card .card-block h4 {
+    margin-top: 8px;
+    font-size: 22px;
+    color: #070c0c;
+    line-height: 35px;
+}
+
+section.whyme .card .card-block p {
+    margin-top: 13px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #919191;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+section.whyme .card:hover .card-block p {
+    opacity: 1;
+}
+/*languages*/
+section.langs .title h3 {
+    font-size: 36px;
+    color: #302002;
+    line-height: 120px;
+}
+
+section.langs {
+    padding: 25px 0;
+    background-color: #ebc99d;
+    text-align: right;
+}
+
+section.langs .title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 2px;
+    background-color: #302002;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.langs .title {
+    position: relative;
+    margin-bottom: 20px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ebc99d;
+    perspective: 1000px; /*3d effect*/
+    margin: auto;
+  }
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: #302002;
+  }
+  .flip-card-back {
+    background-color: #16aeca;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back h1{
+      margin-top: 150px;
+  }
+  /*footer*/
+  footer .top-footer {
+    background-color: #171717;
+    padding: 75px 0;
+    text-align: right;
+}
+
+footer .top-footer h3 {
+    font-size: 18px;
+    line-height: 45px;
+    color: #ebc99d;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+footer .top-footer h3:before {
+    content: "";
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    width: 45px;
+    height: 2px;
+    background-color: #5c5c5c;
+}
+footer .top-footer ul {
+    text-align: center;
+    padding: 0;
+}
+
+footer .top-footer ul.social li a i {
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 2px;
+    background-color: #333333;
+    color: #acacac;
+    transition: all .5s ease;
+}
+
+footer .top-footer ul.social li a:hover i {
+    background-color: #ebc99d;
+}
+footer .buttom-footer {
+    background-color: #111111;
+}
+
+footer .buttom-footer h3 {
+    text-align: center;
+    font-size: 15px;
+    line-height: 78px;
+    color: #919191;
+    margin-bottom: 0;
+}
+@media (min-width:200px)and(max-width:576px){
+    .flip-card {
+        width: 100px;
+        height: 100px;
+    }
+}
