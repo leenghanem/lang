@@ -37,12 +37,6 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scroll" href="#languages">
-              اللغات
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link scroll" href="#">
               تسجيل الدخول
             </a>
@@ -52,13 +46,17 @@
               حساب جديد
             </a>
           </li>
+          <form class="example" action="#languages">
+            <input type="text" placeholder="ابحث عن ..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
         </ul>
       </div>
     </div>
   </nav>
   <!--carousel-->
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="direction: rtl;">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="pictures/cover1.jpg" class="d-block w-100" alt="...">
@@ -147,9 +145,9 @@
           ما هي اللغة التي ترغب بتعلمها؟
         </h3>
       </div>
-      <div class="flipcards-container">
+      <div class="flipcards-container" style="padding:1px;">
         <div class="row">
-          <div class="col-md m-3 justify-content-center">
+          <div class="col-lg  m-auto justify-content-center">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -161,8 +159,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md m-3 justify-content-center">
-            <div class="flip-card">
+          <div class="col-lg m-auto  justify-content-center">
+            <div class="flip-card ">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <img src="pictures/fr.jpg" alt="french" style="width:300px;height:300px;">
@@ -173,8 +171,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md m-3 justify-content-center">
-            <div class="flip-card">
+          <div class="col-lg m-auto justify-content-center">
+            <div class="flip-card ">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <img src="pictures/gr.jpg" alt="german" style="width:300px;height:300px;">
@@ -191,7 +189,7 @@
   </section>
   <footer>
     <div class="top-footer">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-md">
             <h3>عنا</h3>
@@ -205,7 +203,7 @@
           <div class="col-md">
             <h3>الأسئلة الشائعة</h3>
           </div>
-          <div class="col-md">
+          <div class="col-md ">
             <h3>الخصوصية</h3>
           </div>
 
